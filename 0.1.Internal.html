@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, internal-css">
+    <link rel="shortcut icon" href="/Image/hacker.ico" type="image/x-icon">
+    <title>H//.CSS_INTERNAL</title>
+    <style>
+        body {
+            /* background color selector */
+            background-color: rgb(139, 129, 226);
+            /* background-color: hsl(59, 100%, 50%); this is another method of setting colours
+            background-color: #8c00ff; */
+        }
+
+        p {
+            /* paragraph(each) background color selecter */
+            background: whitesmoke;
+        }
+
+        #mypara {
+            /* unique id styling */
+            background: turquoise;
+            /* "color" is for text colour */
+            color: rgb(111, 0, 255);
+        }
+
+        .group1 {
+            /* class styling */
+            background: violet;
+            color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- This is a normal para -->
+    <p>This is a Normal Paragraph</p>
+    <!-- This is a unique id para     -->
+    <p id="mypara">This is a Unique ID Paragraph</p>
+    <!-- These are paragraphs of one class -->
+    <p class="group1">This Paragraph belongs to Group1</p>
+    <p class="group1">This Too</p>
+    <!-- This is Type2, i.e., In-Line-CSS  -->
+    <div style="background: thistle;
+    color: teal;">This is made from In Line CSS</div>
+</body>
+
+</html>

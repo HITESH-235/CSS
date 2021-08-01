@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html, external-css">
+    <link rel="shortcut icon" href="/Image/hacker.ico" type="image/x-icon">
+    <title>H//.CSS_EXTERNAL/BoxModule</title>
+    <link rel="stylesheet" href="1.Style.css">
+    <style>
+        body {
+            background: black;
+        }
+
+        .pad {
+            color: white;
+            border-style: dashed;
+            border-right-style: solid;
+            border-left-style: solid;
+            border-color: rgb(255, 121, 148);
+            border-width: 5px;
+            border-radius: 25px;
+            height: 90px;
+        }
+
+        .margin {
+            color: white;
+            border-style: solid;
+            /*this is just for styling here*/
+            border-right-style: dashed;
+            border-left-style: dashed;
+            border-color: rgb(130, 161, 255);
+            border-width: 3px;
+            border-radius: 18px;
+        }
+
+        .box {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: teal; color: yellow; width: 100%;">
+        <p>This is a Normal Para</p>
+        <p>This is a Normal Para</p>
+        <p>This is a Normal Para</p>
+        <p>This is a Normal Para</p>
+    </div>
+    <p class="box">This Is Border</p>
+    <p class="margin">This is Margin</p>
+    <p class="margin">This is also Margin</p>
+    <!-- see the gap between them that is equified with its self collapsing capability -->
+    <p class="margin">This is another Margin</p>
+    <!-- this is to show whether from any class, collapsing lies there -->
+    <p class="pad">This is padding Lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni aliquid vitae
+        explicabo repellendus accusantium ratione corrupti fugit maiores ut nam, iure nulla ex odio ea necessitatibus
+        repellat architecto quasi. Iste officiis quam.</p>
+    <!-- padding is the inside space given to the box -->
+</body>
+
+</html>

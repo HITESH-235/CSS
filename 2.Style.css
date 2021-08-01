@@ -1,0 +1,116 @@
+/* 0.5 */
+
+.anchor a {
+    /* these are the different ways to style the link(anchor tag) */
+    /*text-decoration: none; */
+    /* text-decoration: overline; */
+    /* text-decoration:line-through; */
+    text-decoration: underline;
+}
+
+.letterspace {
+    letter-spacing: 10px;
+    /* this tag can increase the space between each letter of a word */
+}
+
+.textransform {
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+}
+
+.wordspacing {
+    word-spacing: 15px;
+}
+
+.textshadow {
+    text-shadow: 1px 4px rgb(47, 0, 255);
+    /* the value in px can be in + or - both, +-, -+, --, anything can be done */
+    /* text-shadow: 2px 2px 8px cyan;  */
+    /* Text-shadow with a blur effect */
+    /* text-shadow: 0 0 3px rgb(47, 0, 255); */
+    /* Text-shadow with a blue neon glow: */
+    /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+    /* Text-shadow with a red and blue neon glow: */
+}
+
+.direction {
+    direction: rtl;
+    /* makes text right to left */
+    /* direction: ltr; */
+    /* makes text left to right(which is default on any page) */
+}
+
+/* 0.6 */
+
+/* Some important points about font */
+
+/* CSS font-style Property */
+/* The font-style property specifies the font style for a text. */
+/* normal	The browser displays a normal font style. This is default	
+italic	The browser displays an italic font style	
+oblique	The browser displays an oblique font style	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit	 */
+
+/* CSS font-variant Property */
+/* In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+The font-variant property specifies whether or not a text should be displayed in a small-caps font. */
+/* normal	The browser displays a normal font. This is default	
+small-caps	The browser displays a small-caps font	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit */
+
+/* CSS font-weight Property */
+/* The font-weight property sets how thick or thin characters in text should be displayed. */
+/* normal	Defines normal characters. This is default	
+bold	Defines thick characters	
+bolder	Defines thicker characters	
+lighter	Defines lighter characters	
+100     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+200     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+300     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+400     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+500     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+600     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	
+700     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	 
+800     Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	  
+900	    Defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold	 
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit */
+
+/* CSS line-height Property */
+/* The line-height property specifies the height of a line.
+Note: Negative values are not allowed. */
+/* normal	A normal line height. This is default	
+number	A number that will be multiplied with the current font-size to set the line height	
+length	A fixed line height in px, pt, cm, etc.	
+%	A line height in percent of the current font size	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit	 */
+
+/* CSS font-family Property */
+/* The font-family property specifies the font for an element.
+The font-family property can hold several font names as a "fallback" system. If the browser does not support the first font, it tries the next font.
+There are two types of font family names:
+family-name - The name of a font-family, like "times", "courier", "arial", etc.
+generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy", "monospace".
+Start with the font you want, and always end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.
+Note: Separate each value with a comma.
+Note: If a font name contains white-space, it must be quoted. Single quotes must be used when using the "style" attribute in HTML. */
+
+#para_0_6 {
+    border: 5px rgb(116, 116, 116) solid;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    color: darkred;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-style: bold;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: initial;
+    font-family: Agency FB, consolas, Impact, sans-serif;
+    font-size: 30px;
+}
