@@ -1,0 +1,207 @@
+/* 0.8 */
+
+/* unvisited link */
+
+a#anchor_0_8:link {
+    color: green;
+}
+
+/* visited link */
+
+a#anchor_0_8:visited {
+    color: green;
+}
+
+/* mouse over link */
+
+a#anchor_0_8:hover {
+    color: red;
+}
+
+/* selected link */
+
+a#anchor_0_8:active {
+    color: yellow;
+}
+
+a#anchor_0_8_1:hover, a#anchor_0_8_1:active {
+    color: rgb(0, 255, 157);
+}
+
+a#anchor_0_8_2:hover, a#anchor_0_8_2:active {
+    font-size: 150%;
+}
+
+a#anchor_0_8_3:hover, a#anchor_0_8_3:active {
+    background: rgb(209, 255, 6);
+}
+
+a#anchor_0_8_4:hover, a#anchor_0_8_4:active {
+    font-family: impact;
+}
+
+a#anchor_0_8_5:visited, a#anchor_0_8_5:link {
+    font-style: none;
+}
+
+a#anchor_0_8_5:hover, a#anchor_0_8_5:active {
+    font-style: italic;
+}
+
+/* Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+Note: a:active MUST come after a:hover in the CSS definition in order to be effective. */
+
+/* 0.9 */
+
+/* The position Property
+The position property specifies the type of positioning method used for an element.
+There are five different position values:
+static;
+relative;
+fixed;
+absolute;
+sticky */
+
+/* position: relative;
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. */
+
+/* position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+A fixed element does not leave a gap in the page where it would normally have been located.
+Notice the fixed element in the lower-right corner of the page. */
+
+/* position: absolute;
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+Note: A "positioned" element is one whose position is anything except static */
+
+/* position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). */
+
+/* The float Property
+The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+The float property can have one of the following values:
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent
+In its simplest use, the float property can be used to wrap text around images. */
+
+/* The clear Property
+When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property.
+The clear property specifies what should happen with the element that is next to a floating element.
+The clear property can have one of the following values:
+none - The element is not pushed below left or right floated elements. This is default
+left - The element is pushed below left floated elements
+right - The element is pushed below right floated elements
+both - The element is pushed below both left and right floated elements
+inherit - The element inherits the clear value from its parent */
+
+/* CSS Layout - Overflow */
+
+/* The CSS overflow property controls what happens to content that is too big to fit into an area. */
+
+/* The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area.
+The overflow property has the following values:
+visible - Default. The overflow is not clipped. The content renders outside the element's box
+hidden - The overflow is clipped, and the rest of the content will be invisible
+scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+auto - Similar to scroll, but it adds scrollbars only when necessary */
+
+/* By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box: */
+
+/* overflow: hidden
+With the hidden value, the overflow is clipped, and the rest of the content is hidden: */
+
+/* overflow: scroll
+Setting the value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it): */
+
+/* overflow: auto
+The auto value is similar to scroll, but it adds scrollbars only when necessary: */
+
+/* overflow-x and overflow-y
+The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+overflow-x specifies what to do with the left/right edges of the content.
+overflow-y specifies what to do with the top/bottom edges of the content. */
+
+.para_0_9_1 {
+    display: inline;
+    float: right;
+    width: 66%;
+    margin-right: 10%;
+}
+
+.zero, .one, .one_2, .two, .three {
+    border: 5px brown solid;
+    border-radius: 18px;
+    width: 66%;
+    height: 500px;
+    margin: 20px;
+    float: right;
+    display: inline;
+    margin-right: 10%;
+    /* box-sizing: border-box !important; */
+}
+
+.zero {
+    position: static;
+    /* this is actually default */
+}
+
+.one {
+    position: relative;
+    right: -10%;
+    /* negative no.has been used to override margin */
+    /* This direction comes with relative attribute */
+    /* use any direction to move */
+}
+
+.two {
+    position: fixed;
+    right: -10%;
+    /* negative no.has been used to override margin */
+    bottom: 0%;
+}
+
+.one_2 {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    border: 5px brown dashed;
+    border-radius: 18px;
+    margin: 10px;
+    width: 50%;
+    height: 60%;
+    right: 0 !important;
+    bottom: 0 !important;
+}
+
+.four {
+    border: 5px brown solid;
+    border-radius: 18px;
+    margin-right: 10%;
+    width: 66%;
+    height: auto;
+    float: right;
+    display: inline;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+    /* This is a different type of top attribute */
+    /* Scroll down to see */
+}
+
+.p {
+    margin-right: 10%;
+    width: 66%;
+    height: auto;
+    float: right;
+    display: inline;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
