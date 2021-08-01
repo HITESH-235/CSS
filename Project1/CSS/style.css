@@ -1,0 +1,116 @@
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 19.2px;
+}
+
+.left img {
+    width: 100px;
+    background-size: cover;
+}
+
+.mid {
+    display: block;
+    width: 33%;
+    margin: 20px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover, .navbar li a:active {
+    color: wheat;
+    text-decoration: underline;
+}
+
+.right {
+    display: inline-block;
+    border: 4px solid white;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 0px 2px;
+    background-color: transparent;
+    color: white;
+    padding: 20px 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+.container {
+    border: 5px solid white;
+    margin-left: 70px;
+    margin-top: 80px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 33%;
+    border-radius: 15px;
+    width: 43%;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    background: transparent;
+    border: 5px solid white;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    color: honeydew;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.form-group input {
+    font-family: Agency FB;
+    font-weight: bold;
+}
+
+.form-group input:hover, .form-group input:active {
+    background: black;
+    
+}
+
+.container button:hover {
+    background: black;
+}
+
+.container button {
+    font-family: Agency FB;
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+    line-height: 10px;
+    font-size: 30px;
+}
+
