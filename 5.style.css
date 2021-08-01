@@ -1,0 +1,83 @@
+/* 0.2.External.html */
+
+#para_0_2 {
+    background-image: url(/Image/G.png);
+    color: wheat;
+    background-size: 100%;
+}
+
+#body_0_2 {
+    background: rgba(119, 236, 240, 0.747);
+}
+
+/* This is how we can colour any block in html */
+
+/* 0.3.External.html */
+
+/* this is for body */
+
+#body_0_3 {
+    /* We can try many things with background pic position */
+    /* background-image: url(WallpaperCraft.jpg); */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: no-repeat; */
+    /* This takes two inputs, e.g.- right top */
+    /* background-position: right top;  */
+    /* This means you can scroll page but picture won't be scrolled */
+    /* background-attachment: fixed; */
+    /* Or just write this in one line */
+    background: rgba(119, 236, 240, 0.747) url(/Image/WallpaperCraft.jpg) no-repeat right top fixed;
+}
+
+/* This code is for div tag only */
+
+#div_0_3 {
+    background-color: teal;
+    color: yellow;
+    width: 30%;
+}
+
+/* 0.4.External.html */
+
+.box {
+    border-style: solid;
+    /*solid, dashed, dotted*/
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    /*use any direction*/
+    border-width: 4px;
+    /*we can also write border-top-width:, or any direction*/
+    border-color: rgb(199, 121, 255);
+    /*can also write border-top-color:*/
+    /* border: 3px solid blue */
+    /*shortcut*/
+    border-radius: 18px;
+    /*Roundness for the border*/
+    /*also applies for direction*/
+    /* border radius can be directional too */
+}
+
+.margin {
+    /* margin: 40px; */
+    /*margin is the outer space of the box*/
+    /*this makes gap of 20 px from all outsides*/
+    /* margin-top: 20px; */
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    margin: 20px 40px 20px 40px;
+    /* shorthand, top, right, bottom, left- order*/
+    /* margin: auto; */
+    /* auto attribute will manage itslef */
+    /* you can add height and width too */
+}
+
+.pad {
+    margin: 15px;
+    padding: 15px 20px 15px 20px;
+    /* padding has its every attribute written in same way as a margin*/
+    /* padding makes distance from all directions equal */
+    text-align: center;
+    text-justify: distribute;
+    /* outline: darkcyan; */
+}
